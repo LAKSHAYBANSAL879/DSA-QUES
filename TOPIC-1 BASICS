@@ -1,0 +1,89 @@
+// problem solving
+// q1 reverse the integer
+// #include<iostream>
+// using namespace std;
+// class solution{
+//     public:
+//     int reverse(int x){
+//  int ans=0;
+//  while (x!=0)
+//  {
+//     int digit=x%10;
+//     if(ans>INT8_MAX/10 || ans<<INT8_MIN/10){
+// return 0;
+//     }
+// ans=(ans*10)+digit;
+// x=x/10;
+//  }
+//  return ans;
+//     }
+// };
+// int main() {
+//     solution sol;
+//     cout<<"enter a integer to reverse"<<endl;
+//     int x;
+//     cin>>x;
+//     int complimented =sol.reverse(x);
+//  cout<<"complimented integer is "<<complimented<<endl;
+//     return 0;
+// }
+
+// q2 compliment of 10
+// #include<iostream>
+// using namespace std;
+// class solution{
+//     public:
+//     int compiment(int x){
+//         int y=x;
+//         int mask=0;
+//         if(x==0){
+//             return 1;
+//         }
+//         while(y!=0){
+// mask=(mask<<1) | 1;
+// y=y>>1;
+//         }
+//  int ans=(~x)&mask;
+
+//  return ans;
+//     }
+// };
+// int main() {
+//     solution sol;
+//     cout<<"enter a integer to find bitwise compliment"<<endl;
+//     int x;
+//     cin>>x;
+//     int complimented =sol.compiment(x);
+//  cout<<"complimented integer is "<<complimented<<endl;
+//     return 0;
+// }
+
+// q3 power of two
+// #include<iostream>
+// #include<math.h>
+// using namespace std;
+// class solution{
+//     public:
+//     bool power(int x){
+//         int ans=1;
+// for (int i = 0; i <30; i++)
+// {
+    
+//     if(ans==x){
+//         return true;
+//     }
+//     ans=ans*2;
+// }
+
+//  return false;
+//     }
+// };
+// int main() {
+//     solution sol;
+//     cout<<"enter a integer to find bitwise compliment"<<endl;
+//     int x;
+//     cin>>x;
+//     int ispower=sol.power(x);
+//  cout<<" integer is "<<ispower<<"power of two"<<endl;
+//     return 0;
+// }
